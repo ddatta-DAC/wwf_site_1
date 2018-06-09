@@ -81,6 +81,7 @@ color: blue;
     <img src="{{url_for('static',filename='data/plots/country_share.png')}}" />
     </div>
     Observation : Most of the trade is from China.</br>
+    {% include 'data/trade_val_time.html' %}
     <hr>
 
     <div>
@@ -94,7 +95,7 @@ color: blue;
     <h2 class="h2"> Analysis </h2>
     <a href="companies"> Companies </a>
 </div>
-
+{% include 'data/map1.html' %}
 <!--<div w3-include-html="content.html"></div>-->
 
 
