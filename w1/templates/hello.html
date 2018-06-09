@@ -1,0 +1,86 @@
+<!doctype html>
+<script>
+
+</script>
+<style type="text/css">
+#body{
+margin: 45px;
+font-size: 20px;
+}
+#h2 {
+    background-color: black;
+    foreground-color: white;
+    text-align: center;
+    color: white;
+    font-size:40px;
+    padding:30px;
+}
+#p1{
+    text-align: left;
+    color: black;
+    font-size:20px;
+    padding:5px;
+}
+#d2{
+    text-align: left;
+    color: black;
+    font-size:20px;
+    padding:10px;
+}
+#anal1.h2{
+text-align: center;
+color: blue;
+}
+</style>
+
+<body id="body" >
+
+
+<title> WWF Data </title>
+<div id ='d1'>
+   <h2 id='h2' >WWF Data Details</h2>
+    <p id='p1'> Some details are as follows :
+    <ul>
+    <li> The data has 20000 rows.</li>
+    <li> The data is from 2007 to 2013. </li>
+    </ul>
+    </p>
+</div>
+<div id ="d2">
+    <p>
+    The important attributes in data are  as follows.
+        <ol>
+             <li> Arrival Date</li>
+             <li> Source Country ( eg. CN, JP )</li>
+             <li> estimatedValue (dollar value)</li>
+             <li> regionOfOrigin ( e.g. Far East, South America ) </li>
+             <li> portArrivalOrig </li>
+             <li> portDepartureOrig </li>
+            <li> coastalRegion ( which coast of US the shipment came in ) </li>
+            <li> Carrier ( e.g. Maersk ) </li>
+            <li> Consignee </li>
+            <li> Consignee Address </li>
+            <li> Harmonized Tariff Schedule (HS Code) [  HS Code is a 6 digit code for commodities by which countries levy tax on entry ]</li>
+            <li> Weight </li>
+            <li> Shipper </li>
+            <li> Shipment Address </li>
+            <li> Commodity_Desc [  Text information  describing the item ]</li>
+        </ol>
+    </p>
+
+</div>
+<hr>
+<div>
+    <img src="{{url_for('static',filename='data/plots/country_share.png')}}" />
+</div>
+Observation : Most of the trade is from China.</br>
+<hr>
+<div id="anal1">
+    <h2 class="h2"> Analysis </h2>
+    <a href="companies"> Companies </a>
+</div>
+
+<!--<div w3-include-html="content.html"></div>-->
+
+
+</body>

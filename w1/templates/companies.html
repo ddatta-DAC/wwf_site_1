@@ -1,0 +1,42 @@
+<!doctype html>
+<script>
+
+</script>
+<style type="text/css">
+#body{
+margin: 45px;
+font-size:20px;
+}
+#h2 {
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size:30px;
+    padding:20px;
+}
+
+#first_div{
+    text-align: left;
+    color: black;
+    font-size:20px;
+    padding:10px;
+}
+</style>
+<title> Companies </title>
+<body id="body" >
+
+<div >
+    <h2 id="h2"> Companies </h2>
+</div>
+
+<div id="first_div">
+    Some of the companies with suspicious names are :
+    </br>
+    </br>
+     {% include 'data/suspicious_company_names.txt' %}
+    </br>
+</div>
+<hr>
+
+</body>
+
