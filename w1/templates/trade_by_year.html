@@ -1,0 +1,62 @@
+<!doctype html>
+<script>
+
+</script>
+<style type="text/css">
+#body{
+margin: 45px;
+font-size:20px;
+}
+
+#h2 {
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size:30px;
+    padding:20px;
+}
+
+.d1{
+    text-align: left;
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+}
+.js-link-to-tool{
+       hidden:true,
+       display:none
+}
+</style>
+<title> Trade value broken down by year </title>
+<body id="body" >
+
+<div >
+    <h2 id="h2"> Trade value broken down by year </h2>
+</div>
+
+<div class="d1" >
+        {% include 'data/2007.html' %}
+</div>
+<div class="d1" >
+        {% include 'data/2008.html' %}
+</div>
+<div class="d1" >
+        {% include 'data/2009.html' %}
+</div>
+<div class="d1" >
+        {% include 'data/2010.html' %}
+</div>
+<div class="d1" >
+        {% include 'data/2011.html' %}
+</div>
+<div class="d1" >
+        {% include 'data/2012.html' %}
+</div>
+<div class="d1" >
+        {% include 'data/2013.html' %}
+</div>
+<hr>
+
+</body>
+</html>
+

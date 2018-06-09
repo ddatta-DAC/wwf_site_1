@@ -16,3 +16,6 @@ def login():
 def companies():
     return render_template('companies.html')
 
+@app.route('/trade_by_year')
+def trade_by_year():
+    return render_template('trade_by_year.html')

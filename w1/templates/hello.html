@@ -31,6 +31,10 @@ font-size: 20px;
 text-align: center;
 color: blue;
 }
+.js-link-to-tool{
+       hidden:true,
+       display:none
+}
 </style>
 
 <body id="body" >
@@ -70,12 +74,23 @@ color: blue;
 
 </div>
 <hr>
-<div>
-    <img src="{{url_for('static',filename='data/plots/country_share.png')}}" />
-</div>
-Observation : Most of the trade is from China.</br>
-<hr>
+
+
 <div id="anal1">
+    <div>
+    <img src="{{url_for('static',filename='data/plots/country_share.png')}}" />
+    </div>
+    Observation : Most of the trade is from China.</br>
+    <hr>
+
+    <div>
+        <!--<img src="{{url_for('static',filename='data/plots/all_trade_sankey1.png')}}" />-->
+        {% include 'data/f1.html' %}
+    </div>
+    <hr>
+     <a href="trade_by_year"> Trade By Year </a>
+    <hr>
+
     <h2 class="h2"> Analysis </h2>
     <a href="companies"> Companies </a>
 </div>
