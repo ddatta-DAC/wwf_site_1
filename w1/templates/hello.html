@@ -1,7 +1,4 @@
 <!doctype html>
-<script>
-
-</script>
 <style type="text/css">
 #body{
 margin: 45px;
@@ -54,17 +51,17 @@ color: blue;
     <p>
     The important attributes in data are  as follows.
         <ol>
-             <li> Arrival Date</li>
-             <li> Source Country ( eg. CN, JP )</li>
-             <li> estimatedValue (dollar value)</li>
-             <li> regionOfOrigin ( e.g. Far East, South America ) </li>
-             <li> portArrivalOrig </li>
-             <li> portDepartureOrig </li>
+            <li> Arrival Date</li>
+            <li> Source Country ( eg. CN, JP )</li>
+            <li> estimatedValue (dollar value)</li>
+            <li> regionOfOrigin ( e.g. Far East, South America ) </li>
+            <li> portArrivalOrig </li>
+            <li> portDepartureOrig </li>
             <li> coastalRegion ( which coast of US the shipment came in ) </li>
             <li> Carrier ( e.g. Maersk ) </li>
             <li> Consignee </li>
             <li> Consignee Address </li>
-            <li> Harmonized Tariff Schedule (HS Code) [  HS Code is a 6 digit code for commodities by which countries levy tax on entry ]</li>
+            <li> Harmonized Tariff Schedule (HS Code) [ HS Code is a 6 digit code for commodities by which countries levy tax on entry ]</li>
             <li> Weight </li>
             <li> Shipper </li>
             <li> Shipment Address </li>
@@ -85,7 +82,6 @@ color: blue;
     <hr>
 
     <div>
-        <!--<img src="{{url_for('static',filename='data/plots/all_trade_sankey1.png')}}" />-->
         {% include 'data/f1.html' %}
     </div>
     <hr>
@@ -93,10 +89,16 @@ color: blue;
     <hr>
 
     <h2 class="h2"> Analysis </h2>
-    <a href="companies"> Companies </a>
+    <em>Links:</em>
+    <ol>
+        <li> <a href="companies"> Companies </a> </li>
+        <li> <a href="graph_analysis_1"> Analysis page 1 </a> </li>
+        <li> <a href="graph_analysis_2"> Analysis page 2 </a> </li>
+    </ol>
+
+
 </div>
 {% include 'data/map1.html' %}
-<!--<div w3-include-html="content.html"></div>-->
 
 
 </body>

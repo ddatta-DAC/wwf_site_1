@@ -1,0 +1,433 @@
+<!doctype html>
+<style type="text/css">
+
+#body{
+color: black;
+font-size:20px;
+padding:0px;
+}
+#header {
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size:40px;
+    padding:10px;
+}
+#main_div{
+    color: black;
+    font-size:15px;
+    padding:25px;
+    margin: 45px;
+}
+
+</style>
+
+<body id="body" >
+<title> WWF Data </title>
+<div id="header" >
+    Analysis Page 1
+</div>
+<div id ="main_div">
+    <div>
+        <p>
+            The data is cast into a graph G , where nodes are companies. The companies are represented by their respective id.
+            An egde (u,v) is added if u and v  &isin; G and u and v have a transaction with same HS Code. </br>
+            Let us consider only HS codes starting with 4.</br>
+            </br>
+            440320, 441600, 440710, 440200, 440721, 440723, 44182, </br>
+            442010, 44189, 401693, 441890, 441510, 44071, 441900, </br>
+            44079, 441520, 441010, 440500, 441400, 440121, 440890, </br>
+            44219,44092, 491199, 440130, 442190, 440399, 441299, 440791,</br>
+            440792,440920, 441820, 440799, 441700, 440420, 441830, 440310, 442110. </br>
+        </p>
+        <hr>
+            There are 537 companies that have transaction records with these HS Codes.
+        </br>
+                HS Code  440320  Number of transactions with this HS Code  6 </br>
+                HS Code  441600  Number of transactions with this HS Code  51 </br>
+                HS Code  440710  Number of transactions with this HS Code  39 </br>
+                HS Code  440200  Number of transactions with this HS Code  1 </br>
+                HS Code  440721  Number of transactions with this HS Code  2 </br>
+                HS Code  440723  Number of transactions with this HS Code  6 </br>
+                HS Code  44182  Number of transactions with this HS Code  220 </br>
+                HS Code  442010  Number of transactions with this HS Code  9 </br>
+                HS Code  44189  Number of transactions with this HS Code  26 </br>
+                HS Code  401693  Number of transactions with this HS Code  2 </br>
+                HS Code  441890  Number of transactions with this HS Code  25 </br>
+                HS Code  441510  Number of transactions with this HS Code  5 </br>
+                HS Code  44071  Number of transactions with this HS Code  40 </br>
+                HS Code  441900  Number of transactions with this HS Code  1 </br>
+                HS Code  44079  Number of transactions with this HS Code  481 </br>
+                HS Code  441520  Number of transactions with this HS Code  9 </br>
+                HS Code  441010  Number of transactions with this HS Code  6 </br>
+                HS Code  440500  Number of transactions with this HS Code  2 </br>
+                HS Code  441400  Number of transactions with this HS Code  9 </br>
+                HS Code  440121  Number of transactions with this HS Code  1 </br>
+                HS Code  440890  Number of transactions with this HS Code  8 </br>
+                HS Code  44219  Number of transactions with this HS Code  706 </br>
+                HS Code  44092  Number of transactions with this HS Code  10172 </br>
+                HS Code  491199  Number of transactions with this HS Code  2 </br>
+                HS Code  440130  Number of transactions with this HS Code  1 </br>
+                HS Code  442190  Number of transactions with this HS Code  705 </br>
+                HS Code  440399  Number of transactions with this HS Code  35 </br>
+                HS Code  441299  Number of transactions with this HS Code  1 </br>
+                HS Code  440791  Number of transactions with this HS Code  256 </br>
+                HS Code  440792  Number of transactions with this HS Code  18 </br>
+                HS Code  440920  Number of transactions with this HS Code  10165 </br>
+                HS Code  441820  Number of transactions with this HS Code  219 </br>
+                HS Code  440799  Number of transactions with this HS Code  206 </br>
+                HS Code  441700  Number of transactions with this HS Code  42 </br>
+                HS Code  440420  Number of transactions with this HS Code  25 </br>
+                HS Code  441830  Number of transactions with this HS Code  4 </br>
+                HS Code  440310  Number of transactions with this HS Code  1 </br>
+                HS Code  442110  Number of transactions with this HS Code  1 </br>
+        </br>
+        <hr>
+         <b> HS Code 440320 </b> </br>
+        Number of transactions with this HS Code  6 </br>
+        Number of nodes  5 </br>
+         Number of Edges  4 </br>
+        Number of Connected Components  1 </br>
+        Largest Component size  5 </br>
+        Smallest Component size  5 </br>
+        <img src="{{url_for('static',filename='data/figs_1/440320.png')}}" />
+        <hr>
+         <b> HS Code 441600 </b> </br>
+        Number of transactions with this HS Code  51 </br>
+        Number of nodes  8 </br>
+         Number of Edges  6 </br>
+        Number of Connected Components  2 </br>
+        Largest Component size  6 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/441600.png')}}" />
+        <hr>
+         <b> HS Code 440710 </b> </br>
+        Number of transactions with this HS Code  39 </br>
+        Number of nodes  23 </br>
+         Number of Edges  16 </br>
+        Number of Connected Components  7 </br>
+        Largest Component size  7 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/440710.png')}}" />
+        <hr>
+         <b> HS Code 440200 </b> </br>
+        Number of transactions with this HS Code  1 </br>
+        Number of nodes  2 </br>
+         Number of Edges  1 </br>
+        Number of Connected Components  1 </br>
+        Largest Component size  2 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/440200.png')}}" />
+        <hr>
+         <b> HS Code 440721 </b> </br>
+        Number of transactions with this HS Code  2 </br>
+        Number of nodes  4 </br>
+         Number of Edges  2 </br>
+        Number of Connected Components  2 </br>
+        Largest Component size  2 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/440721.png')}}" />
+        <hr>
+         <b> HS Code 440723 </b> </br>
+        Number of transactions with this HS Code  6 </br>
+        Number of nodes  4 </br>
+         Number of Edges  3 </br>
+        Number of Connected Components  1 </br>
+        Largest Component size  4 </br>
+        Smallest Component size  4 </br>
+        <img src="{{url_for('static',filename='data/figs_1/440723.png')}}" />
+        <hr>
+         <b> HS Code 44182 </b> </br>
+        Number of transactions with this HS Code  220 </br>
+        Number of nodes  35 </br>
+         Number of Edges  25 </br>
+        Number of Connected Components  10 </br>
+        Largest Component size  11 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/44182.png')}}" />
+        <hr>
+         <b> HS Code 442010 </b> </br>
+        Number of transactions with this HS Code  9 </br>
+        Number of nodes  7 </br>
+         Number of Edges  4 </br>
+        Number of Connected Components  3 </br>
+        Largest Component size  3 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/442010.png')}}" />
+        <hr>
+         <b> HS Code 44189 </b> </br>
+        Number of transactions with this HS Code  26 </br>
+        Number of nodes  14 </br>
+         Number of Edges  10 </br>
+        Number of Connected Components  4 </br>
+        Largest Component size  8 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/44189.png')}}" />
+        <hr>
+         <b> HS Code 401693 </b> </br>
+        Number of transactions with this HS Code  2 </br>
+        Number of nodes  2 </br>
+         Number of Edges  1 </br>
+        Number of Connected Components  1 </br>
+        Largest Component size  2 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/401693.png')}}" />
+        <hr>
+         <b> HS Code 441890 </b> </br>
+        Number of transactions with this HS Code  25 </br>
+        Number of nodes  14 </br>
+         Number of Edges  10 </br>
+        Number of Connected Components  4 </br>
+        Largest Component size  8 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/441890.png')}}" />
+        <hr>
+         <b> HS Code 441510 </b> </br>
+        Number of transactions with this HS Code  5 </br>
+        Number of nodes  6 </br>
+         Number of Edges  4 </br>
+        Number of Connected Components  2 </br>
+        Largest Component size  4 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/441510.png')}}" />
+        <hr>
+         <b> HS Code 44071 </b> </br>
+        Number of transactions with this HS Code  40 </br>
+        Number of nodes  24 </br>
+         Number of Edges  17 </br>
+        Number of Connected Components  7 </br>
+        Largest Component size  8 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/44071.png')}}" />
+        <hr>
+         <b> HS Code 441900 </b> </br>
+        Number of transactions with this HS Code  1 </br>
+        Number of nodes  2 </br>
+         Number of Edges  1 </br>
+        Number of Connected Components  1 </br>
+        Largest Component size  2 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/441900.png')}}" />
+        <hr>
+         <b> HS Code 44079 </b> </br>
+        Number of transactions with this HS Code  481 </br>
+        Number of nodes  96 </br>
+         Number of Edges  92 </br>
+        Number of Connected Components  8 </br>
+        Largest Component size  66 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/44079.png')}}" />
+        <hr>
+         <b> HS Code 441520 </b> </br>
+        Number of transactions with this HS Code  9 </br>
+        Number of nodes  8 </br>
+         Number of Edges  5 </br>
+        Number of Connected Components  3 </br>
+        Largest Component size  4 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/441520.png')}}" />
+        <hr>
+         <b> HS Code 441010 </b> </br>
+        Number of transactions with this HS Code  6 </br>
+        Number of nodes  6 </br>
+         Number of Edges  3 </br>
+        Number of Connected Components  3 </br>
+        Largest Component size  2 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/441010.png')}}" />
+        <hr>
+         <b> HS Code 440500 </b> </br>
+        Number of transactions with this HS Code  2 </br>
+        Number of nodes  4 </br>
+         Number of Edges  2 </br>
+        Number of Connected Components  2 </br>
+        Largest Component size  2 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/440500.png')}}" />
+        <hr>
+         <b> HS Code 441400 </b> </br>
+        Number of transactions with this HS Code  9 </br>
+        Number of nodes  5 </br>
+         Number of Edges  3 </br>
+        Number of Connected Components  2 </br>
+        Largest Component size  3 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/441400.png')}}" />
+        <hr>
+         <b> HS Code 440121 </b> </br>
+        Number of transactions with this HS Code  1 </br>
+        Number of nodes  2 </br>
+         Number of Edges  1 </br>
+        Number of Connected Components  1 </br>
+        Largest Component size  2 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/440121.png')}}" />
+        <hr>
+         <b> HS Code 440890 </b> </br>
+        Number of transactions with this HS Code  8 </br>
+        Number of nodes  8 </br>
+         Number of Edges  4 </br>
+        Number of Connected Components  4 </br>
+        Largest Component size  2 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/440890.png')}}" />
+        <hr>
+         <b> HS Code 44219 </b> </br>
+        Number of transactions with this HS Code  706 </br>
+        Number of nodes  118 </br>
+         Number of Edges  109 </br>
+        Number of Connected Components  12 </br>
+        Largest Component size  50 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/44219.png')}}" />
+        <hr>
+         <b> HS Code 44092 </b> </br>
+        Number of transactions with this HS Code  10172 </br>
+        Number of nodes  446 </br>
+         Number of Edges  587 </br>
+        Number of Connected Components  5 </br>
+        Largest Component size  413 </br>
+        Smallest Component size  2 </br>
+
+        <img src="{{url_for('static',filename='data/figs_1/44092.png')}}" />
+        <hr>
+         <b> HS Code 491199 </b> </br>
+        Number of transactions with this HS Code  2 </br>
+        Number of nodes  2 </br>
+         Number of Edges  1 </br>
+        Number of Connected Components  1 </br>
+        Largest Component size  2 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/491199.png')}}" />
+        <hr>
+         <b> HS Code 440130 </b> </br>
+        Number of transactions with this HS Code  1 </br>
+        Number of nodes  2 </br>
+         Number of Edges  1 </br>
+        Number of Connected Components  1 </br>
+        Largest Component size  2 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/440130.png')}}" />
+        <hr>
+         <b> HS Code 442190 </b> </br>
+        Number of transactions with this HS Code  705 </br>
+        Number of nodes  117 </br>
+         Number of Edges  108 </br>
+        Number of Connected Components  12 </br>
+        Largest Component size  50 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/442190.png')}}" />
+        <hr>
+         <b> HS Code 440399 </b> </br>
+        Number of transactions with this HS Code  35 </br>
+        Number of nodes  14 </br>
+         Number of Edges  8 </br>
+        Number of Connected Components  6 </br>
+        Largest Component size  4 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/440399.png')}}" />
+        <hr>
+         <b> HS Code 441299 </b> </br>
+        Number of transactions with this HS Code  1 </br>
+        Number of nodes  2 </br>
+         Number of Edges  1 </br>
+        Number of Connected Components  1 </br>
+        Largest Component size  2 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/441299.png')}}" />
+        <hr>
+         <b> HS Code 440791 </b> </br>
+        Number of transactions with this HS Code  256 </br>
+        Number of nodes  62 </br>
+         Number of Edges  56 </br>
+        Number of Connected Components  8 </br>
+        Largest Component size  39 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/440791.png')}}" />
+        <hr>
+         <b> HS Code 440792 </b> </br>
+        Number of transactions with this HS Code  18 </br>
+        Number of nodes  4 </br>
+         Number of Edges  2 </br>
+        Number of Connected Components  2 </br>
+        Largest Component size  2 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/440792.png')}}" />
+        <hr>
+         <b> HS Code 440920 </b> </br>
+        Number of transactions with this HS Code  10165 </br>
+        Number of nodes  446 </br>
+         Number of Edges  586 </br>
+        Number of Connected Components  5 </br>
+        Largest Component size  413 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/440920.png')}}" />
+        <hr>
+         <b> HS Code 441820 </b> </br>
+        Number of transactions with this HS Code  219 </br>
+        Number of nodes  35 </br>
+         Number of Edges  25 </br>
+        Number of Connected Components  10 </br>
+        Largest Component size  11 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/441820.png')}}" />
+        <hr>
+         <b> HS Code 440799 </b> </br>
+        Number of transactions with this HS Code  206 </br>
+        Number of nodes  52 </br>
+         Number of Edges  37 </br>
+        Number of Connected Components  15 </br>
+        Largest Component size  8 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/440799.png')}}" />
+        <hr>
+         <b> HS Code 441700 </b> </br>
+        Number of transactions with this HS Code  42 </br>
+        Number of nodes  14 </br>
+         Number of Edges  9 </br>
+        Number of Connected Components  5 </br>
+        Largest Component size  4 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/441700.png')}}" />
+        <hr>
+         <b> HS Code 440420 </b> </br>
+        Number of transactions with this HS Code  25 </br>
+        Number of nodes  6 </br>
+         Number of Edges  4 </br>
+        Number of Connected Components  2 </br>
+        Largest Component size  4 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/440420.png')}}" />
+        <hr>
+         <b> HS Code 441830 </b> </br>
+        Number of transactions with this HS Code  4 </br>
+        Number of nodes  4 </br>
+         Number of Edges  3 </br>
+        Number of Connected Components  1 </br>
+        Largest Component size  4 </br>
+        Smallest Component size  4 </br>
+        <img src="{{url_for('static',filename='data/figs_1/441830.png')}}" />
+        <hr>
+         <b> HS Code 440310 </b> </br>
+        Number of transactions with this HS Code  1 </br>
+        Number of nodes  2 </br>
+         Number of Edges  1 </br>
+        Number of Connected Components  1 </br>
+        Largest Component size  2 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/440310.png')}}" />
+        <hr>
+         <b> HS Code 442110 </b> </br>
+        Number of transactions with this HS Code  1 </br>
+        Number of nodes  2 </br>
+         Number of Edges  1 </br>
+        Number of Connected Components  1 </br>
+        Largest Component size  2 </br>
+        Smallest Component size  2 </br>
+        <img src="{{url_for('static',filename='data/figs_1/442110.png')}}" />
+        <hr>
+
+    </div>
+</div>
+
+</body>
